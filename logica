@@ -1,0 +1,148 @@
+
+Dim totalSoma As Integer
+Dim mais As Boolean
+
+
+Sub c()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "1"
+        
+        Else
+        
+        Label.Caption = 1
+    
+    End If
+    
+    
+End Sub
+
+Sub c2()
+    Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "2"
+        
+        Else
+        
+        Label.Caption = 2
+    
+    End If
+End Sub
+Sub c3()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "3"
+        
+        Else
+        
+        Label.Caption = 3
+    
+    End If
+End Sub
+Sub c4()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "4"
+        
+        Else
+        
+        Label.Caption = 4
+    
+    End If
+End Sub
+Sub c5()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "5"
+        
+        Else
+        
+        Label.Caption = 5
+    
+    End If
+End Sub
+Sub c6()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "6"
+        
+        Else
+        
+        Label.Caption = 6
+    
+    End If
+End Sub
+Sub c7()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "7"
+        
+        Else
+        
+        Label.Caption = 7
+    
+    End If
+End Sub
+Sub c8()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "8"
+        
+        Else
+        
+        Label.Caption = 8
+    
+    End If
+End Sub
+Sub c9()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "9"
+        
+        Else
+        
+        Label.Caption = 9
+    
+    End If
+End Sub
+Sub c0()
+Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Label.Caption = Label.Caption + "0"
+        
+        Else
+        
+        Label.Caption = 0
+    
+    End If
+End Sub
+
+
+
+
+
+
+Sub soma()
+    Set Label = UserForm1.Label1
+    If Label.Caption <> "" Then
+        Dim ValorBase As Integer
+        Dim ValorBase2 As Integer
+        
+        If mais = True Then
+            ValorBase2 = CInt(Label.Caption)
+            totalSoma = ValorBase + ValorBase2
+            Label.Caption = totalSoma
+        Else
+            ValorBase = CInt(Label.Caption)
+            Label.Caption = ""
+            mais = True
+        End If
+    Else
+        MsgBox "Vazio"
+    End If
+End Sub
+
+Sub igual()
+    Set Label = UserForm1.Label1
+    Label.Caption = totalSoma
+End Sub
